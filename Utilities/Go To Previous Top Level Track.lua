@@ -6,8 +6,6 @@
 
 function main()
 
-    reaper.Undo_BeginBlock()
-
     currentProject = 0
 
     -- Get last touched track
@@ -33,9 +31,16 @@ function main()
                     track = reaper.GetLastTouchedTrack()
                     parent = reaper.GetParentTrack(track)
                 end
+        -- Has parent --> Not top level track
+        else
+            while (parent ~= nil)
+                do
+                    -- Go to next track
+                    reaper.Main_OnCommandEx(40286, 0, currentProject)
+                    track = reaper.GetLastTouchedTrack()
+                    parent = reaper.GetParentTrack(track)
+                end
     end
-
-    reaper.Undo_EndBlock("Go to the previous top-level track", -1)
 
 end
 
