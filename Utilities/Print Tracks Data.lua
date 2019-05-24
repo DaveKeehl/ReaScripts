@@ -11,9 +11,6 @@ Parameters implemented:
   7) IS MUTED
   8) PHASE
   9) IS SELECTED
-Future data to be implemented: 
-  1) START OF FOLDER INDICATOR
-  2) END OF FOLDER INDICATOR
 --]]
 
 function main()
@@ -27,6 +24,7 @@ function printTrackInfo()
   reaper.ClearConsole()
   
   currentProject = 0
+
   amount = reaper.CountTracks(currentProject)
 
   if amount == 0 then
@@ -95,11 +93,11 @@ function printTrackInfo()
         
         -- MUTE
         isMute = reaper.GetMediaTrackInfo_Value(track, "B_MUTE")
-        if isMute == 1
+        if isMute == 0
           then
-            reaper.ShowConsoleMsg("Mute: ON\n")
-          else
             reaper.ShowConsoleMsg("Mute: OFF\n")
+          else
+            reaper.ShowConsoleMsg("Mute: ON\n")
         end
 
         -- PHASE
@@ -109,7 +107,7 @@ function printTrackInfo()
           reaper.ShowConsoleMsg("Phase: Normal\n")
           else
           reaper.ShowConsoleMsg("Phase: Inverted\n")
-        end  
+        end
 
         -- LAST TRACK
         if i == amount-1 then

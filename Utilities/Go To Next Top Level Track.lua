@@ -1,7 +1,6 @@
 --[[
     * Author: davekeehl
     * Description: This script allows to go to the next top-level track
-    * Version: 1.0
 --]]
 
 function main()
