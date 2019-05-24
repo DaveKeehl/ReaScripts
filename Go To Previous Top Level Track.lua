@@ -1,7 +1,7 @@
 --[[
-Author: davekeehl
-Description: This script allows to go to the previous top-level track
-Version: 1.0
+    * Author: davekeehl
+    * Description: This script allows to go to the previous top-level track
+    * Version: 1.0
 --]]
 
 function main()
