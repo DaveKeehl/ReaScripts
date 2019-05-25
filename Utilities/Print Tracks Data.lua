@@ -19,16 +19,15 @@
 function main()
 
   reaper.ClearConsole()
-
-  currentProject = 0
-  amount = reaper.CountTracks(currentProject)
-  selected_amount = reaper.CountSelectedTracks(currentProject)
-
-  printTrackInfo(amount, selected_amount)
+  printTrackInfo()
 
 end
 
-function printTrackInfo(tracks, selected_tracks)
+function printTrackInfo()
+
+  currentProject = 0
+  tracks = reaper.CountTracks(currentProject)
+  selected_tracks = reaper.CountSelectedTracks(currentProject)
 
   if tracks == 0
 
@@ -37,8 +36,9 @@ function printTrackInfo(tracks, selected_tracks)
       reaper.ShowConsoleMsg("There are no tracks in this project.")
 
     else
+
       -- PRINT THE PROJECT NAME
-      projectName = reaper.GetProjectName(currentProject, "test")
+      projectName = reaper.GetProjectName(currentProject, "")
       reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
       reaper.ShowConsoleMsg("PROJECT NAME: ")
       if projectName == ""
@@ -54,35 +54,45 @@ function printTrackInfo(tracks, selected_tracks)
         then
           -- MODE 1 (ALL TRACKS)
           reaper.ShowConsoleMsg("MODE 1 SELECTED (ALL TRACKS)" .. "\n")
-          getTracksInfo(tracks)
+          for i = 0, tracks-1, 1 do
+            reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
+            -- GET CURRENT TRACK
+            track = reaper.GetTrack(currentProject, i)
+            getTracksInfo(track)
+            -- LAST TRACK
+            if i == tracks-1 then
+              reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
+            end
+          end
         else
           -- MODE 2 (SELECTED TRACKS)
           reaper.ShowConsoleMsg("MODE 2 SELECTED (ONLY SELECTED TRACKS)" .. "\n")
-          getTracksInfo(selected_tracks)
+          for i = 0, selected_tracks-1, 1 do
+            reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
+            -- GET CURRENT TRACK
+            track = reaper.GetSelectedTrack(currentProject, i)
+            getTracksInfo(track)
+            -- LAST TRACK
+            if i == selected_tracks-1 then
+              reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
+            end
+          end      
       end
 
   end
 
 end
 
-function getTracksInfo(tracks)
-
-  for i = 0, tracks-1, 1 do
+function getTracksInfo(track)
     
-    reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
-
-
-    -- GET CURRENT TRACK
-    track = reaper.GetTrack(currentProject, i)
-
     -- TRACK NUMBER
     track_number = reaper.GetMediaTrackInfo_Value(track, "IP_TRACKNUMBER")
     reaper.ShowConsoleMsg("TRACK " .. math.floor(track_number) .. "\n")
-    
+
     -- TRACK NAME
     _, name = reaper.GetTrackName(track)
     reaper.ShowConsoleMsg("Name: " .. name .. "\n")
-    
+
     -- PARENT TRACK
     parent = reaper.GetParentTrack(track)
     if parent == nil
@@ -132,13 +142,6 @@ function getTracksInfo(tracks)
       else
       reaper.ShowConsoleMsg("Phase: Inverted\n")
     end
-
-    -- LAST TRACK
-    if i == tracks-1 then
-      reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
-    end
-
-  end
 
 end
 
