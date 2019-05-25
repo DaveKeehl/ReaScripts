@@ -28,6 +28,8 @@ function printTrackInfo()
   currentProject = 0
   tracks = reaper.CountTracks(currentProject)
   selected_tracks = reaper.CountSelectedTracks(currentProject)
+  description = "MODE 1: ALL TRACKS" .. "\n"
+  mode = "all"
 
   if tracks == 0
 
@@ -49,35 +51,40 @@ function printTrackInfo()
       end
       reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
 
-      -- CHOOSE THE RIGHT SCRIPT MODE
-      if selected_tracks == 0
+      -- CHOOSE SCRIPT MODE
+      if selected_tracks > 0
         then
-          -- MODE 1 (ALL TRACKS)
-          reaper.ShowConsoleMsg("MODE 1 SELECTED (ALL TRACKS)" .. "\n")
-          for i = 0, tracks-1, 1 do
-            reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
-            -- GET CURRENT TRACK
-            track = reaper.GetTrack(currentProject, i)
-            getTracksInfo(track)
-            -- LAST TRACK
-            if i == tracks-1 then
-              reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
-            end
-          end
-        else
-          -- MODE 2 (SELECTED TRACKS)
-          reaper.ShowConsoleMsg("MODE 2 SELECTED (ONLY SELECTED TRACKS)" .. "\n")
-          for i = 0, selected_tracks-1, 1 do
-            reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
-            -- GET CURRENT TRACK
-            track = reaper.GetSelectedTrack(currentProject, i)
-            getTracksInfo(track)
-            -- LAST TRACK
-            if i == selected_tracks-1 then
-              reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
-            end
-          end      
+          description = "MODE 2: ONLY SELECTED TRACKS" .. "\n"
+          tracks = selected_tracks
+          mode = "selected"
       end
+      setScriptMode(description, tracks, mode)
+
+  end
+
+end
+
+function setScriptMode(description, tracks, mode)
+  
+  reaper.ShowConsoleMsg(description)
+
+  for i = 0, tracks-1, 1 do
+
+    reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
+
+    -- GET TRACK (DEPENDS ON THE SCRIPT MODE)
+    if mode == "all"
+      then
+        track = reaper.GetTrack(currentProject, i)
+      else
+        track = reaper.GetSelectedTrack(currentProject, i)
+      end
+    getTracksInfo(track)
+
+    -- LAST TRACK
+    if i == tracks-1 then
+      reaper.ShowConsoleMsg("---------------------------------------------------" .. "\n")
+    end
 
   end
 
