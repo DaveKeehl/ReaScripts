@@ -1,5 +1,6 @@
 --[[
   * Author: davekeehl
+
   * Description: This script returns data for all tracks. Useful for debugging other scripts.
                  This script has 2 modes. If no tracks are selected, then all the tracks will be printed,
                  otherwise only the tracks that are currently selected.
@@ -14,6 +15,7 @@
       7) IS MUTED
       8) PHASE
       9) IS SELECTED
+  * Version: 1.0
 --]]
 
 function main()
