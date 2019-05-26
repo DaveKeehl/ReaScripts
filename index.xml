@@ -1,20 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="DaveKeehl Scripts" commit="0131c57fbec280c1ebb3174169058d11dbb074ce">
-  <category name="Utilities">
-    <reapack name="davekeehl_Go To Next Top Level Track.lua" type="script" desc="This script allows to go to the next top-level track">
-      <version name="1.0" author="davekeehl" time="2019-05-26T21:32:18Z">
-        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/da118d6e472acf50638d4c875cfcc385e70316bb/Utilities/davekeehl_Go%20To%20Next%20Top%20Level%20Track.lua</source>
-      </version>
-    </reapack>
-    <reapack name="davekeehl_Go To Previous Top Level Track.lua" type="script" desc="This script allows to go to the previous top-level track">
-      <version name="1.0" author="davekeehl" time="2019-05-26T21:32:18Z">
-        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/da118d6e472acf50638d4c875cfcc385e70316bb/Utilities/davekeehl_Go%20To%20Previous%20Top%20Level%20Track.lua</source>
-      </version>
-    </reapack>
-    <reapack name="davekeehl_Print Tracks Data.lua" type="script" desc="This script returns data for all tracks. Useful for debugging other scripts">
-      <version name="1.0" author="davekeehl" time="2019-05-26T21:34:47Z">
-        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/0131c57fbec280c1ebb3174169058d11dbb074ce/Utilities/davekeehl_Print%20Tracks%20Data.lua</source>
-      </version>
-    </reapack>
-  </category>
-</index>
+<index version="1" name="DaveKeehl Scripts" commit="129727ba4d28cb449725113390c832ff5f57f26b"/>
