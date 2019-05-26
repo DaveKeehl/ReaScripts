@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" commit="129727ba4d28cb449725113390c832ff5f57f26b">
+  <category name="Tracks Properties">
+    <reapack name="davekeehl_Go To Next Top Level Track.lua" type="script" desc="Go To Next Top Level Track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This script allows to go to the next top-level track\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="davekeehl" time="2019-05-26T21:59:01Z">
+        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/129727ba4d28cb449725113390c832ff5f57f26b/Tracks%20Properties/davekeehl_Go%20To%20Next%20Top%20Level%20Track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="davekeehl_Go To Previous Top Level Track.lua" type="script" desc="Go To Previous Top Level Track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This script allows to go to the previous top-level track\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="davekeehl" time="2019-05-26T21:59:01Z">
+        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/129727ba4d28cb449725113390c832ff5f57f26b/Tracks%20Properties/davekeehl_Go%20To%20Previous%20Top%20Level%20Track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="davekeehl_Print Tracks Data.lua" type="script" desc="Print Tracks Data">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This script returns data for all tracks. Useful for debugging other scripts\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="davekeehl" time="2019-05-26T21:59:01Z">
+        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/129727ba4d28cb449725113390c832ff5f57f26b/Tracks%20Properties/davekeehl_Print%20Tracks%20Data.lua</source>
+      </version>
+    </reapack>
+  </category>
+</index>
