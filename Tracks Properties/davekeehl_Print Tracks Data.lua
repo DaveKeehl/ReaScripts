@@ -24,7 +24,7 @@ function printTrackInfo()
 
     then
       -- NO TRACKS IN THE PROJECT
-      reaper.ShowConsoleMsg("There are no tracks in this project.")
+      reaper.ShowConsoleMsg("You need tracks in your project in order to run this script.")
 
     else
 
