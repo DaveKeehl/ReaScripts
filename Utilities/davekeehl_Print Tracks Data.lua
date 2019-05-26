@@ -18,7 +18,6 @@
     8. PHASE
     9. IS SELECTED
 
-
 --]]
 
 function main()
