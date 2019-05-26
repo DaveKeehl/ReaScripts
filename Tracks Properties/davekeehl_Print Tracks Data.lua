@@ -1,6 +1,7 @@
 --[[
   -- @author davekeehl
-  -- @description This script returns data for all tracks. Useful for debugging other scripts
+  -- @description Print Tracks Data
+  -- @about This script returns data for all tracks. Useful for debugging other scripts
   -- @version 1.0
 --]]
 

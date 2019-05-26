@@ -1,6 +1,7 @@
 --[[
     -- @author davekeehl
-    -- @description This script allows to go to the next top-level track
+    -- @description Go To Next Top Level Track
+    -- @about This script allows to go to the next top-level track
     -- @version 1.0
 --]]
 
