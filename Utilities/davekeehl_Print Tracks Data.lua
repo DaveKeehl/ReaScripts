@@ -1,23 +1,7 @@
 --[[
-  
   -- @author davekeehl
-  -- @description This script returns data for all tracks. Useful for debugging other scripts.
+  -- @description This script returns data for all tracks. Useful for debugging other scripts
   -- @version 1.0
-  -- @about
-    # davekeehl_Print Tracks Data.lua
-    This script has 2 modes. If no tracks are selected, then all the tracks will be printed,
-    otherwise only the tracks that are currently selected.
-    ## Parameters displayed: 
-    1. PROJECT NAME
-    2. TRACK NUMBER
-    3. TRACK NAME
-    4. PARENT TRACK NAME
-    5. TRACK DEPTH
-    6. IS SOLOED
-    7. IS MUTED
-    8. PHASE
-    9. IS SELECTED
-
 --]]
 
 function main()
