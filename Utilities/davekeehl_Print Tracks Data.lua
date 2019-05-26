@@ -1,9 +1,9 @@
 --[[
   
-  @author davekeehl
-  @description This script returns data for all tracks. Useful for debugging other scripts.
-  @about
-    # davekeehl_Print Tracks Data
+  -- @author davekeehl
+  -- @description This script returns data for all tracks. Useful for debugging other scripts.
+  -- @about
+    # davekeehl_Print Tracks Data.lua
     This script has 2 modes. If no tracks are selected, then all the tracks will be printed,
     otherwise only the tracks that are currently selected.
     ## Parameters displayed: 
@@ -16,9 +16,7 @@
     7. IS MUTED
     8. PHASE
     9. IS SELECTED
-  @version 1.0
-  @changelog
-    Added tags
+  -- @version 1.0
 
 --]]
 
