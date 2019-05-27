@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="DaveKeehl Scripts" commit="a25feeb6f2152081a5e62baf038812caaa9366ca">
+<index version="1" name="DaveKeehl Scripts" commit="fc363d6879877e1bdc2b90938d06f33eda251aad">
   <category name="Tracks Properties">
     <reapack name="davekeehl_Go To Next Top Level Track.lua" type="script" desc="Go To Next Top Level Track">
       <metadata>
@@ -40,7 +40,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Script Modes\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This script has 2 modes:\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab MODE 1: All tracks\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab MODE 2: Only selected tracks\line If you don't select any tracks, MODE 1 will be engaged automatically. On the other hand, as soon as any number of tracks are selected, MODE 2 will kick in.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab MODE 2: Only selected tracks\line \line If you don't select any tracks, MODE 1 will be engaged automatically. On the other hand, as soon as any number of tracks are selected, MODE 2 will kick in.\sa180\par}
 }
 ]]></description>
       </metadata>
