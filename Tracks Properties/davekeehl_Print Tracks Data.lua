@@ -7,7 +7,7 @@
   --  ## Script Modes
   --  This script has 2 modes:
   --  1. MODE 1: All tracks
-  --  2. MODE 2: Only selected tracks\
+  --  2. MODE 2: Only selected tracks  
   --  If you don't select any tracks, MODE 1 will be engaged automatically. On the other hand, as soon as any number of tracks are selected, MODE 2 will kick in.
   -- @version 1.0
 --]]
