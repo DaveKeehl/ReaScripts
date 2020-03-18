@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="DaveKeehl Scripts" commit="b69877ebcb2592ad8a4ca64ef71e7a799b992e06">
+<index version="1" name="DaveKeehl Scripts" commit="734493bfa206e44d47fb44651167de5a635e7972">
   <category name="Custom Actions">
-    <reapack name="davekeehl_Turn On ETC.lua" type="script" desc="Turn on external timecode synchronization">
+    <reapack name="davekeehl_Turn On External Timecode Synchronization.lua" type="script" desc="Turn on external timecode synchronization">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -11,8 +11,8 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="davekeehl" time="2020-03-18T14:44:10Z">
-        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/b69877ebcb2592ad8a4ca64ef71e7a799b992e06/Custom%20Actions/davekeehl_Turn%20On%20ETC.lua</source>
+      <version name="1.0" author="davekeehl" time="2020-03-18T14:46:49Z">
+        <source main="main">https://github.com/DaveKeehl/ReaScripts/raw/734493bfa206e44d47fb44651167de5a635e7972/Custom%20Actions/davekeehl_Turn%20On%20External%20Timecode%20Synchronization.lua</source>
       </version>
     </reapack>
   </category>
